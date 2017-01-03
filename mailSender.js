@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport(sesTransport({
 const sendMail = (name, email, message, cb) => {
     debugger;
     const mailOptions = {
-        from: '"Your belowed site" <noreply@boot.life>', // sender address
+        from: '"Your beloved site" <noreply@boot.life>', // sender address
         to: process.env.OWNER, // list of receivers
         subject: 'Hello ✔', // Subject line
         text: `${name} ${email} ${message}`, // plaintext body
